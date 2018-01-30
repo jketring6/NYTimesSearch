@@ -1,11 +1,15 @@
 
 
+$("#clearResults").on("click", function() {
+	$("#displayArticleHere").empty();
+})
+
 $("#add-button").on("click", function(event) {
 	event.preventDefault();
-	var term = $("#term").val().trim();
-	var start = $("#start-date").val().trim();
-	var end = $("#end-date").val().trim();
-	var count = $("#number").val().trim();
+	var term = $("#searchTerm").val().trim();
+	var start = $("#startYear").val().trim();
+	var end = $("#endYear").val().trim();
+	var count = $("#dropdownMenu1").val();
 
 	if (count == "") {
 		count = 10;
