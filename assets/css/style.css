@@ -13,3 +13,9 @@ h1 {
     background-color: #20315a;
     color: #ffffff;
 }
+#dropdownMenu1{
+	width: 100%;
+}
+.dropdown-menu{
+	float: left;
+}
