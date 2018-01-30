@@ -31,19 +31,19 @@ $("#add-button").on("click", function(event) {
   	url: url,
   	method: 'GET',
 	}).done(function(result) {
-		$("#display").empty();
+		$("#displayArticleHere").empty();
 		for (var i = 0; i < count; i++) {
 			var newDiv = $("<div class=holders>")
 			var title = result.response.docs[i].headline.main;
 			console.log(title);
 			var numberArticle = $("<p class=articleNumber>").text(i + 1);
-			var headline =  $("<h1>").text(title);
+			var headline =  $("<h1>").html(title);
 			var author = $("<p>").text(result.response.docs[i].byline.original);
 			// console.log(headline);
 			newDiv.append(numberArticle); 
 			newDiv.append(headline);
 			newDiv.append(author);
-			$("#display").append(newDiv);
+			$("#displayArticleHere").append(newDiv);
 	  		
 		}
 	  
