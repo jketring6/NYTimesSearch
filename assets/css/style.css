@@ -1,0 +1,15 @@
+.jumbotron {
+    background-color: #20315a;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.panel-default>.panel-heading {
+    background-color: #20315a;
+    color: #ffffff;
+}
